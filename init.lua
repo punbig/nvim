@@ -31,7 +31,7 @@ require("lazy").setup({
     version = "*",      -- Try to use the latest stable versions of plugins
   },
   install = {
-    colorscheme = { "onedark" },
+    colorscheme = { "onedark", "habamax" }, -- Try onedark first, fallback to habamax
   },
   checker = {
     enabled = true,     -- Automatically check for plugin updates
