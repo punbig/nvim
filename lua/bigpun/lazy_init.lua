@@ -13,8 +13,5 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     spec = "bigpun.lazy",
-    install = {
-        colorscheme = { "onedark", "habamax" }, -- Try onedark first, fallback to habamax
-    },
     change_detection = { notify = false }
 })
