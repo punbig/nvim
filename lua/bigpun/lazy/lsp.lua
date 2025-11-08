@@ -102,7 +102,7 @@ return {
                 "lua_ls",
                 "ts_ls",
                 "omnisharp",
-                "angularls",
+                --"angularls",
                 "gopls",
                 "laravel_ls",
                 "biome"
@@ -249,7 +249,7 @@ return {
                         end,
                     })
                 end,
-                ["angularls"] = function()
+                --[[["angularls"] = function()
                     local lspconfig = require("lspconfig")
                     local util = require("lspconfig.util")
 
@@ -265,7 +265,7 @@ return {
                         end,
                         capabilities = require("cmp_nvim_lsp").default_capabilities(),
                     })
-                end,
+                end,]] --
                 ["lua_ls"] = function()
                     local lspconfig = require("lspconfig")
                     lspconfig.lua_ls.setup({
